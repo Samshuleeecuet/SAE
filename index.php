@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,15 +16,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="signup.js" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.js" />
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
 
-    <title>Sign Up</title>
+    <title>Log In</title>
 </head>
 <body>
 
@@ -73,7 +79,7 @@
 
         </div>
     </nav>
-    <div class="signin-title">
+    <div class="login-title">
         <div class="search-box">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search" class="type">
@@ -81,28 +87,24 @@
             </form>
         </div>
         <div class="team-title">
-            <h1> Sign Up </h1>
+            <h1> Log In </h1>
         </div>
     </div>
     <div class="form">
        <div class="form-body">
-        <b class="form-tit">Sign Up</b>
-        <p>Please fill up this form to sign-up</p><br>
+        <b class="form-tit"><i class="far fa-user fa-3x"></i></b>
+        
         <hr>
-            <form action="signup.php" class="info-form" method="POST">
-                <label for="fname"><b>First-name </b></label><br><input type="text" id="fname" name="fname" required><br><br>
-                <label for="lname"><b>Last-name</b></label><br><input type="text" id="lname" name="lname" required><br><br>
-                <label for="nname"><b>Nick-name </b></label><br><input type="text" id="nname" name="nname" required><br><br>
-                <label for="phn"><b>Phone-number </b></label><br><input type="text" id="phn" name="phn" required><br><br>
+            <form action="login.php" class="info-form" method="POST">
                 <label for="email"><b>Email </b></label><br><input type="text" id="email" name="email" required><br><br>
                 <label for="pass"><b>Password </b></label><br><input type="password" id="pass" name="pass" class="form-control passwordInput" required><br><br>
-                <span id="StrengthDisp" class="badge displayBadge">Weak</span><br>
                 <label for="copass"><b>Confirm-password</b></label><br><input type="password" id="copass" name="copass" required><br><br>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-                <button>Sign-up</button> 
-      
+                <div class="btn-form">
+                    <button>Forgot Password</button>
+                    <button>Log In</button>
+                </div>
+                     
              </form>
         </div>
     </div>
@@ -110,10 +112,10 @@
     <div class="finish">
         <h6> Created By <span>Samshul Islam</span> | © 2021 All rights reserved.</h6>
     </div>
-
+    
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="signup.js"></script>
+    <script src="login.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
