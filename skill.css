@@ -138,28 +138,31 @@ body .btn-primary {
 /*  skill-title  */
 
 .skill-title {
-    max-height: 120px;
-    max-width: 1480px;
-    background-color: greenyellow;
-    text-align: center;
+    height: 80px;
+    width: 1480px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Rubik', sans-serif;
 }
 
 .search-box {
     display: flex;
     height: 60px;
     width: 280px;
-    position: relative;
-    left: 800px;
+    position: absolute;
+    left: 900px;
     border-radius: 10px;
     display: none;
-    background-color: greenyellow;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px grey;
 }
 
 .type {
     height: 40px;
     width: 235px;
     position: relative;
-    top: 18px;
+    top: 12px;
     left: 5px;
     border-radius: 10px;
 }
@@ -170,20 +173,20 @@ body .btn-primary {
     background-color: #fafafa;
     color: red;
     position: relative;
-    top: 18px;
+    top: 12px;
     border-radius: 50%;
 }
 
-.team-title {
-    height: 70px;
-    display: block;
-    background-color: cadetblue;
-}
 
-    .team-title h1 {
-        position: relative;
-        top: 20%;
-    }
+.skill-title p {
+    height: 100px;
+    width: 1480px;
+    background-color:fuchsia;
+    font-size: 15pt;
+}
+.skill-title span{
+    font-size: 35pt;
+}
 
 
 @media only screen and (max-width: 1480px) {
@@ -213,31 +216,29 @@ body .btn-primary {
     }
 }
 
-.column{
-
-  float: left;
-  width: 20%;
-  padding: 20px;
-  transition: 1s;
-
+.content{
+    height: 1700px;
+    width: 1480 px;
+    background-color:grey;
+    margin-top: 22px;
 }
-@media screen and (max-width:992px){
-    .column{
-
-        float: left;
-        width: 50%;
-    }
-    
+.content1{
+   height: 400px;
+   width: 100%;
+   background-color: rgb(247, 23, 23);
 }
-@media screen and (max-width:992px){
-    .column{
-
-        float: left;
-        width: 100%;
-    }
-    
+.content2{
+    height: 400px;
+   width: 100%;
+   background-color: rgba(145, 16, 16, 0.637);
 }
-.column:hover{
-    background-color: rosybrown;
-    border: solid;
+.content3{
+    height: 400px;
+   width: 100%;
+   background-color: rgb(14, 15, 110);
+}
+.content4{
+    height: 400px;
+   width: 100%;
+   background-color: rgb(55, 20, 100);
 }
